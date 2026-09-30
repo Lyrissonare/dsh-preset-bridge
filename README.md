@@ -1,10 +1,15 @@
 # dsh-preset-bridge — 模式目录桥接
 
+[![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+[![IIIA-4](https://img.shields.io/badge/IIIA-4-9370DB)](https://github.com/ErSanSan233/IIIA)
+
 把 0.1.x 惯例的**预设目录**（`~/.dsh/.agent-presets/<id>/`）重新接入 DSH **桌面版 0.2.x** 的模式列表。
 
 > **DSH 桌面版 0.2.0 移除了预设目录扫描**：官方文档明确「注册表不扫描目录，也不接受 preset 路径」。于是升级桌面版后，`router-standard`、`router-spec` 之类以目录形式安装的模式会全部从模式选择器消失（网页版 0.1.x 运行时仍自带扫描，不受影响）。本插件把这条发现通道补回来。
 
 **⚠️ 先读[限制与不保证](#️-限制与不保证生效)** —— 本插件不保证对你的预设生效，且属于过渡期补丁。
+
+**本项目由GLM-5.3Flash、DeepSeek V4.1Flash自主开发**
 
 ---
 

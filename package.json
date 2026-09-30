@@ -1,0 +1,44 @@
+{
+  "name": "dsh-preset-bridge",
+  "version": "0.1.0",
+  "description": "模式目录桥接：DSH 桌面版 0.2.x 移除了 ~/.dsh/.agent-presets 目录扫描，本插件补回该通道，把目录预设注册进 agentPresets 注册表。不保证对所有预设生效，见 README 限制一节。",
+  "type": "module",
+  "main": "./lib/index.js",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lyrissonare/dsh-preset-bridge.git"
+  },
+  "homepage": "https://github.com/Lyrissonare/dsh-preset-bridge#readme",
+  "bugs": {
+    "url": "https://github.com/Lyrissonare/dsh-preset-bridge/issues"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "agent-preset",
+    "cordis"
+  ],
+  "engines": {
+    "dsh": ">=0.2.0-rc <0.3.0-0",
+    "node": ">=22"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.0"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/schemastery": "^3.18.0"
+  }
+}

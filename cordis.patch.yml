@@ -1,0 +1,6 @@
+# dsh-preset-bridge bundle 层：插入插件行。
+# 0.2.x 注册表不扫目录；本插件补回 ~/.dsh/.agent-presets 的发现通道。
+- insert:
+    - id: dsh-preset-bridge
+      name: 'dsh-preset-bridge'
+      config: {}
